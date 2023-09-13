@@ -30,32 +30,52 @@
     <div class="image">
         <img src="image/img.PNG" alt="persegi">
     </div>
-    <div class="rectangle">
-        <p class="rectangles">Persegi</p>
-    </div>
     <div class="rumus">
         <p class="top">Rumus Luas Persegi yaitu:</p>
         <p class="rumusan">L = S x S</p>
         <p>Di mana:</p>
         <p>L = Luas</p>
+        <p class="s">S = Sisi</p>
+    </div>
+    <div class="luas">
+        <p class="white">Keliling Persegi</p>
+    </div>
+    <div class="image">
+        <img src="image/img.PNG" alt="persegi">
+    </div>
+    <div class="rumus">
+        <p class="top">Rumus Keliling Persegi yaitu:</p>
+        <p class="rumusan">L = 4 x S</p>
+        <p>Di mana:</p>
+        <p>K = Keliling</p>
         <p>S = Sisi</p>
     </div>
     <hr>
     <div class="hitung">
         <h2>Hitung Luas Persegi</h2>
     </div>
-    <div class="input">
-        <input type="number">
-    </div>
+    <form id="frm">
+        <div class="input">
+            <input type="number" id="s" placeholder="Nilai Sisi">
+        </div>
 
+        <div class="resultl">
+            <p>L = S x S</p>
+            <p>L = <span id="luas"></span> </p>
+        </div>
+        <div class="resultk">
+            <p>K = 4 x S</p>
+            <p>K = <span id="keliling"></span> </p>
+        </div>
 
-    <div class="submit">
-        <button class="submit">Hitung</button>
-    </div>
-    <div class="reset">
-        <button class="reset">Reset</button>
-    </div>
-    <script src="/js/script.js"></script>
+        <div class="submit">
+            <input type="button" value="Hitung" class="submit" id="h" onclick="luas(), keliling()"></input>
+        </div>
+        <div class="reset">
+            <button class="reset" id="r" value="reset">Reset</button>
+        </div>
+    </form>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

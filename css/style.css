@@ -211,23 +211,13 @@ div img {
     height: auto;
 }
 
-div.rectangle {
-    display: flex;
-    justify-content: center;
-    margin: -40px 70px 0; 
-}
-
-div.rectangles p {
-    font-size: 14px;
-}
-
 div.rumus {
     margin: 0 15px 0;
     font-weight: 500;
     line-height: 20px;
 }
 
-div.rumus p.top{
+div.rumus p.top {
     margin-top: 50px;
 }
 
@@ -236,6 +226,10 @@ div.rumus p.rumusan {
     justify-content: center;
     font-weight: bold;
     margin: 15px 0;
+}
+
+div.rumus p.s{
+    margin-bottom: 15px;
 }
 
 hr {
@@ -264,13 +258,18 @@ div.input input {
     width: 90%;
 }
 
+div.resultl, div.resultk{
+    margin: 15px;
+    font-weight: 500;
+}
+
 div.submit {
     display: flex;
     justify-content: center;
     margin: 15px;
 }
 
-div.submit button {
+div.submit input {
     width: 70px;
     padding: 10px;
     border: none;
@@ -279,7 +278,7 @@ div.submit button {
     background-color: rgb(40, 128, 185);
 }
 
-div.submit button:hover {
+div.submit input:hover {
     background-color: rgb(0, 78, 131);
 }
 
@@ -296,4 +295,8 @@ div.reset button {
     border-radius: 5px;
     color: white;
     background-color: rgb(202, 199, 5);
+}
+
+div.reset button:hover{
+    background-color: rgb(160, 157, 1);
 }
